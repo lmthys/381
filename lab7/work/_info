@@ -1,0 +1,436 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CprE381/lab7
+T_opt
+!s110 1508533107
+VhOQXE^MaV5QHSoP<0GcG42
+Z1 04 26 5 work tb_simplifiedmipsprocessor mixed 1
+=1-005056986709-59ea6372-1bc-3720
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5b;63
+R0
+T_opt1
+!s110 1508536428
+V5U8D5:nNe5Yc0VSDeKD=e0
+R1
+=1-005056986709-59ea706b-3bf-2f14
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1508531433
+VQlmXIXK99UTIYOcTOXQ0T3
+04 23 8 work simplifiedmipsprocessor bdf_type 1
+=1-005056986709-59ea5ce7-2b6-3788
+R4
+R2
+n@_opt2
+R3
+R0
+Ealu
+Z5 w1488465936
+Z6 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z9 8U:/CprE381/lab7/ALU/ALU.vhd
+Z10 FU:/CprE381/lab7/ALU/ALU.vhd
+l0
+L5
+Vf>7RfL[XQ:4nQeF=m[WXT2
+!s100 Z8@PE[3L6GO25hoSiQKiA0
+Z11 OL;C;10.5b;63
+32
+Z12 !s110 1508531381
+!i10b 1
+Z13 !s108 1508531381.000000
+Z14 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/ALU/ALU.vhd|
+Z15 !s107 U:/CprE381/lab7/ALU/ALU.vhd|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Amixed
+R6
+R7
+R8
+DEx4 work 3 alu 0 22 f>7RfL[XQ:4nQeF=m[WXT2
+32
+R12
+l18
+L14
+VN;UcC`KG@jMDzkahaLH3i2
+!s100 3eY0;I7PI;[?5S_]FZG`I0
+R11
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Econvert
+Z18 w1508531145
+R7
+R8
+R0
+Z19 8U:/CprE381/lab7/convert.vhd
+Z20 FU:/CprE381/lab7/convert.vhd
+l0
+L7
+VD;AUO0R4TZ2k[FlN3HN=P0
+!s100 1BUDH7jiDa[;DaWIk@SHn0
+R11
+32
+Z21 !s110 1508531384
+!i10b 1
+Z22 !s108 1508531384.000000
+Z23 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/convert.vhd|
+Z24 !s107 U:/CprE381/lab7/convert.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 7 convert 0 22 D;AUO0R4TZ2k[FlN3HN=P0
+32
+R21
+l14
+L12
+VacB0F97:GC;`9aVK@Bb4L3
+!s100 `>6[>SFk``PASCNe^403^1
+R11
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R16
+R17
+Edecoder5to32
+Z25 w1478273324
+R7
+R8
+R0
+Z26 8U:/CprE381/lab7/Register File/decoder5to32.vhd
+Z27 FU:/CprE381/lab7/Register File/decoder5to32.vhd
+l0
+L4
+VK9N[][AK_5jHc_jXLRDDF1
+!s100 g=Oz0Waa:;e9XJJIjOc8K1
+R11
+32
+Z28 !s110 1508531386
+!i10b 1
+Z29 !s108 1508531386.000000
+Z30 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/decoder5to32.vhd|
+Z31 !s107 U:/CprE381/lab7/Register File/decoder5to32.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 12 decoder5to32 0 22 K9N[][AK_5jHc_jXLRDDF1
+32
+R28
+l11
+L9
+VMzkR4^Jc`AC4;JI;fAJK63
+!s100 5[kcOSo7P]za>Xh1AXXWA3
+R11
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R16
+R17
+Emem
+Z32 w1487862430
+Z33 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z34 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R7
+R8
+R0
+Z35 8U:/CprE381/lab7/Memory/mem.vhd
+Z36 FU:/CprE381/lab7/Memory/mem.vhd
+l0
+L24
+V<6JHmE0mMMGeKVU?DUUh`2
+!s100 njf3QVJ6QIa_JonVl4jhZ1
+R11
+32
+Z37 !s110 1508531388
+!i10b 1
+Z38 !s108 1508531388.000000
+Z39 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Memory/mem.vhd|
+Z40 !s107 U:/CprE381/lab7/Memory/mem.vhd|
+!i113 0
+R16
+R17
+Abehavioral
+R33
+R34
+R7
+R8
+DEx4 work 3 mem 0 22 <6JHmE0mMMGeKVU?DUUh`2
+32
+R37
+l482
+L35
+V[jjF3D^gcLG<FQ=Vo=n]P0
+!s100 4C42V4nNYbBoQH0@dTY0F0
+R11
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R16
+R17
+Emux32to1
+R25
+R7
+R8
+R0
+Z41 8U:/CprE381/lab7/Register File/mux32to1.vhd
+Z42 FU:/CprE381/lab7/Register File/mux32to1.vhd
+l0
+L4
+VEKko6o]RXnlEGYmDezHYe3
+!s100 3Z4dkHSeC;mRW0mA1n>Pk1
+R11
+32
+Z43 !s110 1508531390
+!i10b 1
+Z44 !s108 1508531390.000000
+Z45 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/mux32to1.vhd|
+Z46 !s107 U:/CprE381/lab7/Register File/mux32to1.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 8 mux32to1 0 22 EKko6o]RXnlEGYmDezHYe3
+32
+R43
+l43
+L41
+V5la>6A;U<ET=dkndGS5jE0
+!s100 RdTjU313eJo9Z6CA5fL>X0
+R11
+!i10b 1
+R44
+R45
+R46
+!i113 0
+R16
+R17
+Emux_2
+Z47 w1508368091
+R7
+R8
+R0
+Z48 8U:/CprE381/lab7/2Mux.vhd
+Z49 FU:/CprE381/lab7/2Mux.vhd
+l0
+L7
+V;CWOJST=cfz^ijHlCPAbm2
+!s100 UWZ571<JM4Bz0i_D]Obn[2
+R11
+32
+Z50 !s110 1508531392
+!i10b 1
+Z51 !s108 1508531392.000000
+Z52 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/2Mux.vhd|
+Z53 !s107 U:/CprE381/lab7/2Mux.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 5 mux_2 0 22 ;CWOJST=cfz^ijHlCPAbm2
+32
+R50
+l16
+L14
+Vn@:FaHICFJbiQz5eRi^aE0
+!s100 aUo55@_@LGCK=gUTT;1R=2
+R11
+!i10b 1
+R51
+R52
+R53
+!i113 0
+R16
+R17
+Eregister_file
+Z54 w1488236744
+R7
+R8
+R0
+Z55 8U:/CprE381/lab7/Register File/register_file.vhd
+Z56 FU:/CprE381/lab7/Register File/register_file.vhd
+l0
+L4
+Vabeog3G];c_;_j<Q_K3_]3
+!s100 5Z2o<nZ?UO?97m58;M?WV1
+R11
+32
+Z57 !s110 1508531395
+!i10b 1
+Z58 !s108 1508531395.000000
+Z59 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/register_file.vhd|
+Z60 !s107 U:/CprE381/lab7/Register File/register_file.vhd|
+!i113 0
+R16
+R17
+Astructure
+R7
+R8
+DEx4 work 13 register_file 0 22 abeog3G];c_;_j<Q_K3_]3
+32
+R57
+l73
+L18
+Vn^lPF;XlOBU[ibc^^dPC23
+!s100 S7aB_k7@Q;dnVWQ3a2_iO0
+R11
+!i10b 1
+R58
+R59
+R60
+!i113 0
+R16
+R17
+Eregister_nbit
+R25
+R7
+R8
+R0
+Z61 8U:/CprE381/lab7/Register File/register_Nbit.vhd
+Z62 FU:/CprE381/lab7/Register File/register_Nbit.vhd
+l0
+L4
+Vj0H=aTGZZ3>JzlBkPO9mi2
+!s100 SdHiWgPWLfFACP6LBJF8:2
+R11
+32
+Z63 !s110 1508531397
+!i10b 1
+Z64 !s108 1508531397.000000
+Z65 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/register_Nbit.vhd|
+Z66 !s107 U:/CprE381/lab7/Register File/register_Nbit.vhd|
+!i113 0
+R16
+R17
+Amixed
+R7
+R8
+DEx4 work 13 register_nbit 0 22 j0H=aTGZZ3>JzlBkPO9mi2
+32
+R63
+l17
+L13
+V6AbgT?3[KL6UL^ZXj[[6;2
+!s100 5_:G?13`>bnC@N8_EnM2<1
+R11
+!i10b 1
+R64
+R65
+R66
+!i113 0
+R16
+R17
+Esimplifiedmipsprocessor
+Z67 w1508774331
+R7
+R8
+R0
+Z68 8U:/CprE381/lab7/simplifiedMipsProcessor.vhd
+Z69 FU:/CprE381/lab7/simplifiedMipsProcessor.vhd
+l0
+L25
+VPNf<f<DU>;SEaI48:chC[1
+!s100 :H?BT:TPd=jmj9QCKBN@71
+R11
+32
+Z70 !s110 1508774342
+!i10b 1
+Z71 !s108 1508774342.000000
+Z72 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/simplifiedMipsProcessor.vhd|
+Z73 !s107 U:/CprE381/lab7/simplifiedMipsProcessor.vhd|
+!i113 0
+R16
+R17
+Abdf_type
+R7
+R8
+DEx4 work 23 simplifiedmipsprocessor 0 22 PNf<f<DU>;SEaI48:chC[1
+32
+R70
+l111
+L47
+VeW4I^7lh2bV<54<EKEN5b1
+!s100 V_hjJ:_dfANmEllDY06Dg1
+R11
+!i10b 1
+R71
+R72
+R73
+!i113 0
+R16
+R17
+Etb_simplifiedmipsprocessor
+Z74 w1508774669
+R7
+R8
+R0
+Z75 8U:/CprE381/lab7/tb_SimplifiedMIPSProcessor.vhd
+Z76 FU:/CprE381/lab7/tb_SimplifiedMIPSProcessor.vhd
+l0
+L5
+VBGObjZ;>9O]V<Qo1bS4j^0
+!s100 HN@S<hDohSnD^QA=6gHfk2
+R11
+32
+Z77 !s110 1508774677
+!i10b 1
+Z78 !s108 1508774677.000000
+Z79 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/tb_SimplifiedMIPSProcessor.vhd|
+Z80 !s107 U:/CprE381/lab7/tb_SimplifiedMIPSProcessor.vhd|
+!i113 0
+R16
+R17
+Amixed
+R7
+R8
+DEx4 work 26 tb_simplifiedmipsprocessor 0 22 BGObjZ;>9O]V<Qo1bS4j^0
+32
+R77
+l44
+L10
+VCEJ_`mYe<0DMD:129Ae`e0
+!s100 AgXc<G]MO0dO`HbK=WUG_3
+R11
+!i10b 1
+R78
+R79
+R80
+!i113 0
+R16
+R17

@@ -1,0 +1,175 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CprE381/lab7/Register File
+T_opt
+!s110 1507842324
+VG6l?PR_`d2fKSilB@:jU<2
+04 13 9 work register_file structure 1
+=1-509a4c4738bb-59dfd914-125-1c30
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;10.5b;63
+Edecoder5to32
+Z1 w1478273324
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8U:/CprE381/lab7/Register File/decoder5to32.vhd
+Z5 FU:/CprE381/lab7/Register File/decoder5to32.vhd
+l0
+L4
+VK9N[][AK_5jHc_jXLRDDF1
+!s100 g=Oz0Waa:;e9XJJIjOc8K1
+Z6 OL;C;10.5b;63
+32
+Z7 !s110 1507842248
+!i10b 1
+Z8 !s108 1507842248.000000
+Z9 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/decoder5to32.vhd|
+Z10 !s107 U:/CprE381/lab7/Register File/decoder5to32.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R2
+R3
+DEx4 work 12 decoder5to32 0 22 K9N[][AK_5jHc_jXLRDDF1
+l11
+L9
+VMzkR4^Jc`AC4;JI;fAJK63
+!s100 5[kcOSo7P]za>Xh1AXXWA3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Emux32to1
+R1
+R2
+R3
+R0
+Z13 8U:/CprE381/lab7/Register File/mux32to1.vhd
+Z14 FU:/CprE381/lab7/Register File/mux32to1.vhd
+l0
+L4
+VEKko6o]RXnlEGYmDezHYe3
+!s100 3Z4dkHSeC;mRW0mA1n>Pk1
+R6
+32
+Z15 !s110 1507842252
+!i10b 1
+Z16 !s108 1507842252.000000
+Z17 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/mux32to1.vhd|
+Z18 !s107 U:/CprE381/lab7/Register File/mux32to1.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R2
+R3
+DEx4 work 8 mux32to1 0 22 EKko6o]RXnlEGYmDezHYe3
+l43
+L41
+V5la>6A;U<ET=dkndGS5jE0
+!s100 RdTjU313eJo9Z6CA5fL>X0
+R6
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R11
+R12
+Eregister_file
+Z19 w1488236744
+R2
+R3
+R0
+Z20 8U:/CprE381/lab7/Register File/register_file.vhd
+Z21 FU:/CprE381/lab7/Register File/register_file.vhd
+l0
+L4
+Vabeog3G];c_;_j<Q_K3_]3
+!s100 5Z2o<nZ?UO?97m58;M?WV1
+R6
+32
+Z22 !s110 1507842255
+!i10b 1
+Z23 !s108 1507842254.000000
+Z24 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/Register File/register_file.vhd|
+Z25 !s107 U:/CprE381/lab7/Register File/register_file.vhd|
+!i113 0
+R11
+R12
+Astructure
+R2
+R3
+DEx4 work 13 register_file 0 22 abeog3G];c_;_j<Q_K3_]3
+l73
+L18
+Vn^lPF;XlOBU[ibc^^dPC23
+!s100 S7aB_k7@Q;dnVWQ3a2_iO0
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R11
+R12
+Eregister_nbit
+R1
+R2
+R3
+R0
+Z26 8U:/CprE381/lab7/Register File/register_Nbit.vhd
+Z27 FU:/CprE381/lab7/Register File/register_Nbit.vhd
+l0
+L4
+Vj0H=aTGZZ3>JzlBkPO9mi2
+!s100 SdHiWgPWLfFACP6LBJF8:2
+R6
+32
+Z28 !s110 1507842257
+!i10b 1
+Z29 !s108 1507842257.000000
+Z30 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/Register File/register_Nbit.vhd|
+Z31 !s107 U:/CprE381/lab7/Register File/register_Nbit.vhd|
+!i113 0
+R11
+R12
+Amixed
+R2
+R3
+DEx4 work 13 register_nbit 0 22 j0H=aTGZZ3>JzlBkPO9mi2
+l17
+L13
+V6AbgT?3[KL6UL^ZXj[[6;2
+!s100 5_:G?13`>bnC@N8_EnM2<1
+R6
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R11
+R12

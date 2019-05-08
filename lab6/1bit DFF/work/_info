@@ -1,0 +1,331 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CprE381/lab6/1bit DFF
+T_opt
+!s110 1507839503
+V4`>E8N>ReX>Pe^=J@>K;E2
+Z1 04 9 8 work seq_multi dataflow 1
+=1-005056987492-59dfce0e-1cd-39fc
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5b;63
+T_opt1
+!s110 1507816872
+V0feGGmj>IDAjo]IoE==d:1
+R1
+=1-0050569852fa-59df75a7-3c3-26d8
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1507825296
+V2O[ah23@A1EN=]]IDfQUb1
+R1
+=1-0050569863b8-59df968d-46-3930
+R2
+R3
+n@_opt2
+R4
+R0
+Efull_adder
+Z5 w1506636726
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8U:/CprE381/lab6/1bit DFF/full_adder.vhd
+Z9 FU:/CprE381/lab6/1bit DFF/full_adder.vhd
+l0
+L7
+VO[oh5fkO>VO<ZTPLl9af60
+!s100 gF^CiNGzOm`S0dF?BhZjU3
+Z10 OL;C;10.5b;63
+32
+Z11 !s110 1507779575
+!i10b 1
+Z12 !s108 1507779575.000000
+Z13 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/full_adder.vhd|
+Z14 !s107 U:/CprE381/lab6/1bit DFF/full_adder.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Adataflow
+R6
+R7
+DEx4 work 10 full_adder 0 22 O[oh5fkO>VO<ZTPLl9af60
+l17
+L15
+V;?oLP]S5Lc?`?k60oFUf13
+!s100 UJP;iYRCBlkC1KYDl7ChA2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Efull_adder64
+Z17 w1507780282
+R6
+R7
+R0
+Z18 8U:/CprE381/lab6/1bit DFF/full_adder64.vhd
+Z19 FU:/CprE381/lab6/1bit DFF/full_adder64.vhd
+l0
+L7
+V4Wd;C>W_ioi3QG26RVom]2
+!s100 G09La0F?Y2gRB2lnQMH:F1
+R10
+32
+Z20 !s110 1507822674
+!i10b 1
+Z21 !s108 1507822673.000000
+Z22 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/full_adder64.vhd|
+Z23 !s107 U:/CprE381/lab6/1bit DFF/full_adder64.vhd|
+!i113 0
+R15
+R16
+Abehavioral
+R6
+R7
+Z24 DEx4 work 12 full_adder64 0 22 4Wd;C>W_ioi3QG26RVom]2
+l29
+L16
+V6hozeWgje6`jmZYM7THR80
+!s100 Z]@2FVT28PL]nK>JFD4Hg1
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R15
+R16
+Adataflow
+R6
+R7
+R24
+l29
+L16
+V1JFPAI8HPk0;aSPezj8Pg3
+!s100 z0Y9Of_LmMM]WSGMIQ8jX0
+R10
+32
+!s110 1507780122
+!i10b 1
+!s108 1507780121.000000
+R22
+R23
+!i113 0
+R15
+R16
+w1507780082
+Emulti
+Z25 w1507783719
+R6
+R7
+R0
+Z26 8U:/CprE381/lab6/1bit DFF/multiplier.vhd
+Z27 FU:/CprE381/lab6/1bit DFF/multiplier.vhd
+l0
+L21
+Vc6HHJBHae?DlSo9Y`LfaT3
+!s100 YVlHcX6@eLRdkW@j`;VeK1
+R10
+32
+Z28 !s110 1507822671
+!i10b 1
+Z29 !s108 1507822671.000000
+Z30 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/multiplier.vhd|
+Z31 !s107 U:/CprE381/lab6/1bit DFF/multiplier.vhd|
+!i113 0
+R15
+R16
+Amixed
+R6
+R7
+DEx4 work 5 multi 0 22 c6HHJBHae?DlSo9Y`LfaT3
+l35
+L31
+Vl>IaT@BF268<W7f16WHcb3
+!s100 :nVgUE;h[4oz]ikBVf;[F3
+R10
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R15
+R16
+Emulticand
+Z32 w1507780708
+R6
+R7
+R0
+Z33 8U:/CprE381/lab6/1bit DFF/multiplicand.vhd
+Z34 FU:/CprE381/lab6/1bit DFF/multiplicand.vhd
+l0
+L21
+V:<E;7[]C`WbdeR4PCBX]^3
+!s100 3ao2Uzj<3dC>@elLUfcnf0
+R10
+32
+Z35 !s110 1507822669
+!i10b 1
+Z36 !s108 1507822668.000000
+Z37 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/multiplicand.vhd|
+Z38 !s107 U:/CprE381/lab6/1bit DFF/multiplicand.vhd|
+!i113 0
+R15
+R16
+Amixed
+R6
+R7
+DEx4 work 9 multicand 0 22 :<E;7[]C`WbdeR4PCBX]^3
+l35
+L31
+VeG6UC9Ocdc3I8Jk>]nhRJ2
+!s100 eH?J4z[NnJfnRm^0:oj:J1
+R10
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R15
+R16
+Emux_2
+Z39 w1507242274
+R6
+R7
+R0
+Z40 8U:/CprE381/lab6/1bit DFF/64Mux.vhd
+Z41 FU:/CprE381/lab6/1bit DFF/64Mux.vhd
+l0
+L7
+VNTH?XUL2QP]e7mz1e3YA@1
+!s100 [I3K]UabK@kkVV^P@]WaP2
+R10
+32
+Z42 !s110 1507822667
+!i10b 1
+Z43 !s108 1507822666.000000
+Z44 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/64Mux.vhd|
+Z45 !s107 U:/CprE381/lab6/1bit DFF/64Mux.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R6
+R7
+DEx4 work 5 mux_2 0 22 NTH?XUL2QP]e7mz1e3YA@1
+l16
+L14
+Vn@:FaHICFJbiQz5eRi^aE0
+!s100 aUo55@_@LGCK=gUTT;1R=2
+R10
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R15
+R16
+Ereg
+Z46 w1507814374
+R6
+R7
+R0
+Z47 8U:/CprE381/lab6/1bit DFF/64Register.vhd
+Z48 FU:/CprE381/lab6/1bit DFF/64Register.vhd
+l0
+L21
+VR<10dC8hYci1nNVigiCfZ2
+!s100 0nm^z[o_h18Tfm0hM4AY@1
+R10
+32
+Z49 !s110 1507822665
+!i10b 1
+Z50 !s108 1507822663.000000
+Z51 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/64Register.vhd|
+Z52 !s107 U:/CprE381/lab6/1bit DFF/64Register.vhd|
+!i113 0
+R15
+R16
+Amixed
+R6
+R7
+DEx4 work 3 reg 0 22 R<10dC8hYci1nNVigiCfZ2
+l35
+L31
+V4WQi5ol5`296TZ:[Pco;T3
+!s100 df8d@L[3ThbQU_PD14Soo3
+R10
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R15
+R16
+Eseq_multi
+Z53 w1507839495
+R6
+R7
+R0
+Z54 8U:/CprE381/lab6/1bit DFF/seqMulti.vhd
+Z55 FU:/CprE381/lab6/1bit DFF/seqMulti.vhd
+l0
+L7
+Vo;^S_:z1BXE_<ogT>?A203
+!s100 kmbo<^2^Ig<[32aG??fU?1
+R10
+32
+Z56 !s110 1507839499
+!i10b 1
+Z57 !s108 1507839498.000000
+Z58 !s90 -reportprogress|300|-work|work|U:/CprE381/lab6/1bit DFF/seqMulti.vhd|
+Z59 !s107 U:/CprE381/lab6/1bit DFF/seqMulti.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R6
+R7
+DEx4 work 9 seq_multi 0 22 o;^S_:z1BXE_<ogT>?A203
+l67
+L19
+VWPo0R4jaCQXcoc?fb0=V;1
+!s100 R3RklZ6z2143UFdPm>Roa0
+R10
+32
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 0
+R15
+R16

@@ -1,0 +1,204 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+--Usually name your testbench similar to below for clarify tb_<name>
+entity tb_SimplifiedMIPSProcessor is
+--Generic for half of the clock cycle period
+  generic(gCLK_HPER   : time := 50 ns);  
+end tb_SimplifiedMIPSProcessor;
+
+architecture mixed of tb_SimplifiedMIPSProcessor is
+
+--Define the total clock period time
+constant cCLK_PER  : time := gCLK_HPER * 2;
+
+--We will be making an instance of the file that we are testing
+component simplifiedMipsProcessor is
+  port(CLK       : in  std_logic;
+       reset     : in  std_logic;
+       rs_sel    : in  std_logic_vector(4 downto 0);
+       rt_sel    : in  std_logic_vector(4 downto 0);
+       reg_we    : in  std_logic;
+       w_addr    : in  std_logic_vector(4 downto 0);
+       reg_dest  : in  std_logic;
+       imm 	 : in  std_logic_vector(31 downto 0);
+       sel_imm   : in  std_logic;
+       ALU_op    : in  std_logic_vector(3 downto 0);
+       shamt     : in  std_logic_vector(4 downto 0);
+       mem_we    : in  std_logic;
+       -- I added extra outputs to make testing and debuging easier.
+       rs_data   : out std_logic_vector(31 downto 0);
+       rt_data   : out std_logic_vector(31 downto 0);
+       ALU_out   : out std_logic_vector(31 downto 0);
+       dmem_out  : out std_logic_vector(31 downto 0));
+end component;
+
+-- Create signals for all of the inputs and outputs of the file that you are testing
+-- := '0' or := (others => '0') just make all the signals start at an initial value of zero
+signal CLK, reset, reg_we, reg_dest, sel_imm, mem_we : std_logic := '0';
+signal rs_sel, rt_sel, w_addr, shamt : std_logic_vector(4 downto 0) := (others => '0');
+signal ALU_op: std_logic_vector(3 downto 0) := (others => '0');
+signal imm : std_logic_vector(31 downto 0) := (others => '0');
+signal rs_data, rt_data, ALU_out, dmem_out : std_logic_vector(31 downto 0) := (others => '0');
+
+begin
+
+--Make an instance of the component to test and wire all signals to the corresponding
+--input or output.
+
+  MySimplifiedMIPSProcess: simplifiedMipsProcessor
+  port map(CLK       => CLK,
+           reset     => reset,
+           rs_sel    => rs_sel,
+           rt_sel    => rt_sel,
+           reg_we    => reg_we,
+           w_addr    => w_addr,
+           reg_dest  => reg_dest,
+           imm       => imm,
+           sel_imm   => sel_imm,
+           ALU_op    => ALU_op,
+           shamt     => shamt,
+           mem_we    => mem_we,
+           rs_data   => rs_data,
+           rt_data   => rt_data,
+           ALU_out   => ALU_out,
+           dmem_out  => dmem_out);
+--You can also do the above port map in one line using the below format: http://www.ics.uci.edu/~jmoorkan/vhdlref/compinst.html
+--port map(CLK, reset, rs_sel, rt_sel, reg_we, w_addr, reg_dest, immediate, sel_imm, ALU_OP, shamt, mem_we, rs_data, rt_data, ALU_out, dmem_out);
+  
+--This first process is to automate the clock for the test bench
+  P_CLK: process
+  begin
+    CLK <= '1';
+    wait for gCLK_HPER;
+    CLK <= '0';
+    wait for gCLK_HPER;
+  end process;
+
+--In this process is where you set all other signals and wait for a clock cycle to allow for 
+--the simulation to occur.
+  P_TB : process
+  begin
+    --USUALLY IT IS A GOOD IDEA TO START WITH A RESET 
+    reset <= '1';
+    wait for cCLK_PER;
+    
+    reset <= '0';
+    rs_sel <= "00000";
+    rt_sel <= "00000";
+    reg_we <= '1';
+    w_addr <= "00010";
+    reg_dest <= '0'; 
+    --Remember only change the values on signals that are inputs to the component,
+    --not to output
+    imm <= x"00000001"; 
+    sel_imm <= '0';
+    ALU_op <= "0000";
+    shamt <= "00000";
+    mem_we <= '1';    
+    wait for cCLK_PER;
+    --TODO: load registers r2 and r3 with values using the immediate
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+   
+	
+---------- put into R3    
+    reset <= '0';
+    rs_sel <= "00000";
+    rt_sel <= "00000";
+    reg_we <= '1';
+    w_addr <= "00011";
+    reg_dest <= '0'; 
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000005"; 
+    sel_imm <= '0';
+    ALU_op <= "0000";
+    shamt <= "00000";
+    mem_we <= '0';    
+    wait for cCLK_PER;
+    --ADD Test: add $r1, $r2, $r3     r1 = r2+r3
+    reset <= '0';
+    rs_sel <= "00010";
+    rt_sel <= "00011";
+    reg_we <= '1';
+    w_addr <= "00001";
+    reg_dest <= '0'; 
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000000"; 
+    sel_imm <= '1';
+    ALU_op <= "0000";
+    shamt <= "00000";
+    mem_we <= '0';    
+    wait for cCLK_PER;
+	
+	--SUB Test: sub $r1, $r2, $r3     r1 = r2-r3
+    reset <= '0';
+    rs_sel <= "00010";
+    rt_sel <= "00011";
+    reg_we <= '1';
+    w_addr <= "00001";
+    reg_dest <= '0'; 
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000000"; 
+    sel_imm <= '1';
+    ALU_op <= "0001";
+    shamt <= "00000";
+    mem_we <= '1';    
+    wait for cCLK_PER;
+	-- Test: sll $r1, $r2, $r3     r1 = r2 < r3
+    reset <= '0';
+    rs_sel <= "00010";
+    rt_sel <= "00011";
+    reg_we <= '1';
+    w_addr <= "00001";
+    reg_dest <= '1'; 
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000000"; 
+    sel_imm <= '0';
+    ALU_op <= "1011";
+    shamt <= "00000";
+    mem_we <= '1';    
+    wait for cCLK_PER;
+	-- Test:  SW $r1, $r2, $r3     MEM[r2+0} = r1 
+    reset <= '0';
+    rs_sel <= "00010";
+    reg_dest <= '0'; 
+	reg_we <= '1';
+    w_addr <= "00001";
+    reg_dest <= '1'; 
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000000"; 
+    sel_imm <= '1';
+    ALU_op <= "0000";
+    shamt <= "00000";
+    mem_we <= '1';    
+    wait for cCLK_PER;
+	-- Test:  LW $r1, $r2, $r3     r1 = MEM[r3+0}
+    reset <= '0';
+    rs_sel <= "00010";
+    rt_sel <= "00011";
+    reg_dest <= '0';
+	reg_we <= '1';
+    w_addr <= "00001";
+    reg_dest <= '1'; 	
+    --Note immediate in this example is 16 bits.
+    --Can use other formats than binary, see below for a hex example.
+    imm <= x"00000000"; 
+    sel_imm <= '1';
+    ALU_op <= "0111";
+    shamt <= "00000";
+    mem_we <= '1';    
+    wait for cCLK_PER;
+    --TODO: make more tests below (hint: copy and paste and change values)
+
+    --NOTE: There are ways to create self checking testbenches, here is a link that mentions one method:
+    --      https://cseweb.ucsd.edu/classes/sp09/cse141L/Media/xapp199.pdf
+    --      There may be easier methods than the one above. 
+  end process;
+
+end mixed;

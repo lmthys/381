@@ -1,0 +1,627 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components
+Eadder_32
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+32
+Z4 !s110 1509554079
+!i10b 1
+Z5 w1509551873
+R0
+Z6 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/adder_32.vhd
+Z7 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/adder_32.vhd
+l0
+L5
+VOoV@@28I?UWo8G78Bh8?O1
+!s100 egmg<On7Df2]T:f6g5hnM0
+Z8 OL;C;10.5b;63
+Z9 !s108 1509554079.000000
+Z10 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/adder_32.vhd|
+Z11 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/adder_32.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Amixed
+R1
+R2
+R3
+DEx4 work 8 adder_32 0 22 OoV@@28I?UWo8G78Bh8?O1
+32
+R4
+!i10b 1
+l12
+L10
+VL=Z?ME<?@_NzjScO5cJa@3
+!s100 S]T[0gc@lD5;NQmc<dko_0
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ealu
+R1
+R2
+R3
+32
+R4
+!i10b 1
+Z14 w1509551874
+R0
+Z15 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/ALU.vhd
+Z16 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/ALU.vhd
+l0
+L5
+Vf>7RfL[XQ:4nQeF=m[WXT2
+!s100 Z8@PE[3L6GO25hoSiQKiA0
+R8
+R9
+Z17 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/ALU.vhd|
+Z18 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/ALU.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 f>7RfL[XQ:4nQeF=m[WXT2
+32
+R4
+!i10b 1
+l18
+L14
+V:CBem1Z_gLS6@@WNn_J>E1
+!s100 Z>]N[e?I0aF^P^J25J:fe3
+R8
+R9
+R17
+R18
+!i113 0
+R12
+R13
+Eand_2
+R1
+R2
+R3
+32
+R4
+!i10b 1
+Z19 w1509551872
+R0
+Z20 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/and_2.vhd
+Z21 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/and_2.vhd
+l0
+L5
+VE7^Nc5bBgFC3Z8bU1NkU?1
+!s100 CzU<26n4<nAXZ?hl60M8<3
+R8
+R9
+Z22 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/and_2.vhd|
+Z23 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/and_2.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 5 and_2 0 22 E7^Nc5bBgFC3Z8bU1NkU?1
+32
+R4
+!i10b 1
+l12
+L10
+VdHEMM3@[cgeoaf`8RKb?J2
+!s100 0^FjP8o4ZMzD?4]ZRjG8o0
+R8
+R9
+R22
+R23
+!i113 0
+R12
+R13
+Econcatonate
+R1
+R2
+R3
+32
+!s110 1509554283
+!i10b 1
+Z24 w1509554130
+R0
+Z25 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/concatonator.vhd
+Z26 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/concatonator.vhd
+l0
+L6
+Vz=T3Nk0V8fMO7UX=hQg[<2
+!s100 2A:Q9Wc3I8HVTdMAKSM9W2
+R8
+Z27 !s108 1509554283.000000
+Z28 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/concatonator.vhd|
+Z29 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/concatonator.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 11 concatonate 0 22 z=T3Nk0V8fMO7UX=hQg[<2
+32
+!s110 1509554284
+!i10b 1
+l14
+L12
+V[_Pm7;MCBOJC=BlZBHob21
+!s100 AkVT8geLKddllcZ=H9o:Q0
+R8
+R27
+R28
+R29
+!i113 0
+R12
+R13
+Edmem
+Z30 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+32
+Z32 !s110 1509554080
+!i10b 1
+Z33 w1509551870
+R0
+Z34 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/dmem.vhd
+Z35 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/dmem.vhd
+l0
+L24
+VSdR;fG4IObD@Fl:UmGjc33
+!s100 nXG04B1NNg?Qj;_6dQ?`_1
+R8
+R9
+Z36 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/dmem.vhd|
+Z37 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/dmem.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R30
+R31
+R2
+R3
+DEx4 work 4 dmem 0 22 SdR;fG4IObD@Fl:UmGjc33
+32
+R32
+!i10b 1
+l482
+L35
+V_4na40bLM0fnijo=PiVE42
+!s100 jbhn^6;Eh_C3g@l>dOo4U0
+R8
+R9
+R36
+R37
+!i113 0
+R12
+R13
+Eimem
+R30
+R31
+R2
+R3
+32
+R32
+!i10b 1
+R14
+R0
+Z38 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/imem.vhd
+Z39 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/imem.vhd
+l0
+L24
+VQ7P:dbMzVmNaDUb1_:IVk0
+!s100 ;:C@ekial1:hh0oimdP3>3
+R8
+Z40 !s108 1509554080.000000
+Z41 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/imem.vhd|
+Z42 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/imem.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R30
+R31
+R2
+R3
+DEx4 work 4 imem 0 22 Q7P:dbMzVmNaDUb1_:IVk0
+32
+R32
+!i10b 1
+l482
+L35
+V<:Z5On@^KZViVV7LjCG1Z3
+!s100 6UBLDD7nKFLM30^2gU3ok2
+R8
+R40
+R41
+R42
+!i113 0
+R12
+R13
+Emain_control
+R1
+R2
+R3
+32
+R32
+!i10b 1
+Z43 w1509551871
+R0
+Z44 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/main_control.vhd
+Z45 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/main_control.vhd
+l0
+L5
+VFRNRWa1UfO_>AOz:8CUZF3
+!s100 i^g9aQzd4?KVgPb7ZUn>23
+R8
+R40
+Z46 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/main_control.vhd|
+Z47 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/main_control.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 12 main_control 0 22 FRNRWa1UfO_>AOz:8CUZF3
+32
+Z48 !s110 1509554081
+!i10b 1
+l24
+L18
+V02DCHaATC`c1gz;ES78eN3
+!s100 @o=LEn_84`XA:gl:C8AVV0
+R8
+R40
+R46
+R47
+!i113 0
+R12
+R13
+Emux21_1bit
+R1
+R2
+R3
+32
+R48
+!i10b 1
+R19
+R0
+Z49 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_1bit.vhd
+Z50 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_1bit.vhd
+l0
+L5
+VlF1Cj@36E6km`3JPPA9=O1
+!s100 SIHe3]Q60iOJ5h=e5=^Dc0
+R8
+Z51 !s108 1509554081.000000
+Z52 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_1bit.vhd|
+Z53 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_1bit.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 10 mux21_1bit 0 22 lF1Cj@36E6km`3JPPA9=O1
+32
+R48
+!i10b 1
+l13
+L11
+V87U:b22USN0kNIY`b[3_[1
+!s100 Q1ING><NR6emP3?XbAW[I1
+R8
+R51
+R52
+R53
+!i113 0
+R12
+R13
+Emux21_32bit
+R1
+R2
+R3
+32
+R48
+!i10b 1
+R33
+R0
+Z54 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_32bit.vhd
+Z55 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_32bit.vhd
+l0
+L5
+V6oPYC5`D>j65aD0CEgD_23
+!s100 gMWSROBmKcgSLaeGGchYQ1
+R8
+R51
+Z56 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_32bit.vhd|
+Z57 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_32bit.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 11 mux21_32bit 0 22 6oPYC5`D>j65aD0CEgD_23
+32
+R48
+!i10b 1
+l13
+L11
+Ved2fcbcc^h9o_ak^RDzYA2
+!s100 35lKhO<@n09CbU14>OUjb1
+R8
+R51
+R56
+R57
+!i113 0
+R12
+R13
+Emux21_5bit
+R1
+R2
+R3
+32
+R48
+!i10b 1
+R5
+R0
+Z58 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_5bit.vhd
+Z59 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_5bit.vhd
+l0
+L5
+VTY2D`W;]i`OAP3ZM4@^]O2
+!s100 3Ke0CNONJ:gj14j=ck<Z?3
+R8
+R51
+Z60 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_5bit.vhd|
+Z61 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/mux21_5bit.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 10 mux21_5bit 0 22 TY2D`W;]i`OAP3ZM4@^]O2
+32
+R48
+!i10b 1
+l13
+L11
+VoH[;KIQn0<=SDnZ;KUcbK0
+!s100 ZCiZ4l:7ikI<3HzVb[cmM0
+R8
+R51
+R60
+R61
+!i113 0
+R12
+R13
+Epc_reg
+R1
+R2
+R3
+32
+Z62 !s110 1509554082
+!i10b 1
+R43
+R0
+Z63 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/pc_reg.vhd
+Z64 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/pc_reg.vhd
+l0
+L5
+VnebRUjePfQ]Y3aj8L]Rn21
+!s100 Q8O6zXj5djFDL<m`iT67k2
+R8
+R51
+Z65 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/pc_reg.vhd|
+Z66 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/pc_reg.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 6 pc_reg 0 22 nebRUjePfQ]Y3aj8L]Rn21
+32
+R62
+!i10b 1
+l14
+L12
+Vi7z8<N_6e@nSzzZWU=[8d1
+!s100 jFA0E5no>ZWVVAWi><UPE0
+R8
+R51
+R65
+R66
+!i113 0
+R12
+R13
+Eprojecta
+R2
+R3
+32
+Z67 !s110 1509554972
+!i10b 1
+Z68 w1509554952
+R0
+Z69 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/projectA.vhd
+Z70 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/projectA.vhd
+l0
+L25
+VA:]=:g30i2XI9_@NMPz0L0
+!s100 jgVUN8V=7g@N<34Xn3^160
+R8
+Z71 !s108 1509554971.000000
+Z72 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/projectA.vhd|
+Z73 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/projectA.vhd|
+!i113 0
+R12
+R13
+Abdf_type
+R2
+R3
+DEx4 work 8 projecta 0 22 A:]=:g30i2XI9_@NMPz0L0
+32
+R67
+!i10b 1
+l188
+L34
+VObLL@cozeLz^LlNOS:UWB2
+!s100 DS`;]V@FkQ=<3I?[N<@W22
+R8
+R71
+R72
+R73
+!i113 0
+R12
+R13
+Eregister_file
+R1
+R2
+R3
+32
+R62
+!i10b 1
+R19
+R0
+Z74 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/register_file.vhd
+Z75 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/register_file.vhd
+l0
+L5
+VQ6leQA8D^DY66f;oFFWLY2
+!s100 0;6l8OR7N:fQ8?E^89Gj30
+R8
+Z76 !s108 1509554082.000000
+Z77 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/register_file.vhd|
+Z78 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/register_file.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 13 register_file 0 22 Q6leQA8D^DY66f;oFFWLY2
+32
+R62
+!i10b 1
+l23
+L17
+V^Y?YIbgn^<S2d`0^AMXA@1
+!s100 =e71@BHU0zWCFFFDoj23`3
+R8
+R76
+R77
+R78
+!i113 0
+R12
+R13
+Esign_extender_16_32
+R1
+R2
+R3
+32
+R62
+!i10b 1
+R43
+R0
+Z79 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sign_extender_16_32.vhd
+Z80 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sign_extender_16_32.vhd
+l0
+L5
+VaN?9MoJDKib6EW:O0O1:a1
+!s100 fG?LOX^^lH4;UE9fMB]Z^2
+R8
+R76
+Z81 !s90 -reportprogress|30|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sign_extender_16_32.vhd|
+Z82 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sign_extender_16_32.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 19 sign_extender_16_32 0 22 aN?9MoJDKib6EW:O0O1:a1
+32
+R62
+!i10b 1
+l12
+L10
+VMYK5R2Ll3Sen342GSSBX^0
+!s100 @@jWTG6SS0InUNlbG;c2R3
+R8
+R76
+R81
+R82
+!i113 0
+R12
+R13
+Esll_2
+R1
+R2
+R3
+32
+Z83 !s110 1509555073
+!i10b 1
+Z84 w1509554531
+R0
+Z85 8U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sll_32.vhd
+Z86 FU:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sll_32.vhd
+l0
+L6
+VXc@hB9XhAN6zgZmeZB3FW1
+!s100 F_z?LI[IV_bC@Y_G05@mn2
+R8
+Z87 !s108 1509555072.000000
+Z88 !s90 -reportprogress|300|-work|work|U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sll_32.vhd|
+Z89 !s107 U:/CprE381/lab7/project A-20171101T155633Z-001/project A/Components/sll_32.vhd|
+!i113 0
+R12
+R13
+Amixed
+R1
+R2
+R3
+DEx4 work 5 sll_2 0 22 Xc@hB9XhAN6zgZmeZB3FW1
+32
+R83
+!i10b 1
+l13
+L11
+VSkZT83;V9zFeL7dzb;4a21
+!s100 8;o^EcbggZLl8njhZbT;02
+R8
+R87
+R88
+R89
+!i113 0
+R12
+R13
